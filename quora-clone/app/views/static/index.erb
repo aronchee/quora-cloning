@@ -1,0 +1,20 @@
+<h1>QuNaN</h1>
+
+<h2>Sign up for an account!</h2>
+<form action="/signup" method="post">
+	<input type="text" placeholder="Email" name="user[email]"><br>
+	<input type="password" placeholder="Password" name="user[password]"><br>
+	<input type="name" placeholder="Name" name="user[name]"><br>
+	<input type="submit" value="Sign up">
+	<br></br>
+	<p><%= @msg %></p>
+</form>
+
+<h3>Sign in for current user!</h3>
+<form action="/login" method="post">
+	<input type="text" placeholder="Email" name="email"><br>  
+	<input type="password" placeholder="Password" name="password"></br>
+	<input type="submit" value="Log in">
+	<br></br>
+	<p><%= @msg1 %></p>
+</form>
